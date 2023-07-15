@@ -1,0 +1,17 @@
+<%- include('header') %>
+<%- include('nav') %>
+<%- include('dairy') %>
+<div class="data">
+    <%  data.forEach((ele)=>
+        {%>
+<h2><%= ele.title %></h2>
+<p><%= ele.desc %></p>
+<p><%= ele.date %></p>
+<a href="/info/<%= ele.id %>" id="btn">more</a>
+
+<% })%> 
+
+</div>
+
+
+<%- include('footer') %>

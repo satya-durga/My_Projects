@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:white;}
+body{
+    background:rgba(0, 0, 0, 0.709);}
+.b1{margin:10rem auto;
+text-align: center;}
+.b1 h1,.b1 h3,.b1 a{
+    color:white;}
+span{color:green;
+padding-right:1rem}
+.b1 a{
+    padding:1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.781);
+    display:inline-block;
+    border-radius: 10px;}
+.b1>*{
+   margin-top:1.5rem;}
+.navbar{
+    background-color: black;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between ;
+     padding:0.5rem 4rem;
+     margin-top:0px;/*doubt*/}
+.navbar h2{
+   color:white;}
+.nav a{
+    padding:0rem 1.7rem;
+ font-size: 1.2rem;
+ color:white}
+.dairy{
+ background-color: black;
+margin:6rem 4rem;
+display: inline-block;
+padding:0.4rem 1rem;
+border-radius:10px;}
+.dairy span{
+    color:white;
+    font-size:1.1rem;}
+.dairy a{
+display: inline-block;
+  margin-left:7rem;
+padding:0.5rem 1rem;
+ border-radius:20px;
+ background-color:green}  
+  .add{
+    background-color: rgba(0, 0, 0, 0.834);
+   width:70%;
+    margin:6rem auto;
+    padding:2rem 0rem;} 
+.add h1{
+    padding:0rem 4rem;}
+  .form{
+   padding:2rem 4rem;}
+  .form .field{
+  margin-bottom:1rem; }
+  .form .field >*:not(#in)
+  {
+    display:block;
+    width:100%;}
+ .form input:not(#in){
+    height:2.2rem;}
+ .form label{
+    font-size:1.1rem;
+    font-weight:bold;}
+   .btn{/*if i change to class then only it llows modifications for others other wise not*/
+    display: inline-block;
+    padding:0.5rem 2.3rem;
+    border-radius:5px;
+    background:green;
+    font-size:1.1rem;}
+ #in{
+    padding:0.4rem 1.3rem;
+    font-size:1.1rem;
+    color:rgba(0, 0, 0, 0.491)}
+ .form #c
+ {
+  color:black;
+  padding:0.2rem 1rem;}
+ .data1{
+  display: flex;
+  gap:1rem;
+  margin-left:1rem;
+  flex-wrap: wrap;
+  padding:0rem 2rem;}
+.data1 .con {
+  background-color:black;
+ flex:1 1 20rem;
+  padding:1rem;}
+.con >*{
+  margin:0.7rem;
+  font-size:1.2rem;}
+.con h1{font-size:2.1rem;}
+.data2{
+ background-color:black;
+margin:7rem auto;
+width:70%;
+border-radius:10px;}
+.change{
+  margin:2rem 2rem;
+  display:flex;
+  gap:1rem;}
+.data2 .con{
+  text-indent:2rem;}
+.data2{
+  padding:1.5rem;
+}
+.data2 .change .btn1{
+  background-color:blue;
+}
+.data2 .change .btn2{
+  background-color:red;
+}
+#menu{
+display: none;
+font-size:1.3rem;
+}
+@media(max-width:775px)
+{
+  #menu{
+    display: block;
+    margin-right:1.5rem;
+    font-size:1.2rem;
+    position: absolute;
+    right:3rem;  
+}
+.nav{
+  display: none;
+  position:absolute;
+  top:110%;
+  right:2rem;
+  background:rgba(0, 0, 0, 0.709);
+}
+.nav.active{
+  display: block;
+}
+.nav a{
+  display:block;
+  margin:0.7rem;
+}
+.nav a:hover{
+  color:green;
+}
+.add{
+  width:90%;
+}
+.dairy a{
+    margin-left:2rem;
+}
+}
+
+
+  
+

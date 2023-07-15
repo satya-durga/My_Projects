@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<%- include('nav') %>
+<%- include('footer') %>
+
+<div class="dairy">
+    <span>add to dairy</span>
+    <a href="/add" >add</a>
+</div>
+
+<div class="data1">
+<%  data.forEach((ele)=>
+{%>
+    <div class="con">
+<h1><%= ele.title %></h1>
+<p><%= ele.desc %></p>
+<p><%= ele.date %></p>
+<a href="/dairy/<%= ele.id %>" class="btn">more</a>
+</div>
+<% })%> 
+
+<!--remember
+<div--h1--a> apply flex for div then it is block level so these 2 ele covers all width
+    not line inline-->

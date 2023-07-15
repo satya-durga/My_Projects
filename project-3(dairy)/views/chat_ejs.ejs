@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="chat">
+    <input type="text" placeholder="enter name" id="name" name="nam">
+    <input type="text" placeholder="enter msg" id="msg" name="msg">
+  
+  <a href="#" id="btn">send</a><!--if #not given thtn contents will be disapper-->
+  </div>
+  <script>
+      var connect=io.connect('http://localhost:30004');
+    var btn=document.getElementById('btn');
+   
+    btn.addEventListener('click',()=>{
+      var name=document.getElementById('name').value;
+    var msg=document.getElementById('msg').value;
+  
+    connect.emit('data',{name:name,msg:msg});
+    })
+  </script>
+  </body>
+
+
+</html>

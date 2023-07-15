@@ -1,0 +1,21 @@
+<%- include('header') %>
+<%- include('nav') %>
+<div class="add">
+    <h1>add to <span>dairy</span></h1>
+  <form action="/data" method="post" class="form">
+    <div class="field">
+    <label>title</label>
+    <input type="text" id="c" name="title"></div>
+    <div class="field">
+        <label>description</label>
+       <textarea rows="6" cols="10" id="c" name="desc"></textarea></div>
+        <div class="field">
+            <label>date</label>
+            <input type="date" id="in" name="date"></div>
+        <input type="submit" value="add to dairy" class="btn">
+    
+
+  </form>
+</div>
+
+<%- include('footer') %>

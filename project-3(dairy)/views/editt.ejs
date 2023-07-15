@@ -1,0 +1,19 @@
+<!--method only accept post and get  so nedd to overriden post to put so need to install method
+overriden dependency-->
+<%- include('header') %>
+<div class="add">
+<form action="/dairy/edit/<%= datas.id %>?_method=PUT" method="post"  class="form">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="field">
+    <label>title</label>
+    <input type="text" id="c" name="title" class="title" value="<%= datas.title %> "></div>
+    <div class="field">
+        <label>description</label>
+    <textarea rows="6" cols="10" id="c" name="desc" ><%= datas.desc %> </textarea></div>
+        <div class="field">
+            <label>date</label>
+            <input type="date" id="in" class="spec" name="date" ></div>
+        <input type="submit" value="edit to dairy" class="btn"></form></div>
+    
+<%- include('nav') %>
+<%- include('footer') %>

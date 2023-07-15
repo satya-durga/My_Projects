@@ -1,0 +1,23 @@
+<%- include("header") %>
+<%- include('nav') %>
+
+<div class="data2">
+<div class="con">
+<h1><%= data.title %></h1>
+<p><%= data.date %></p>
+<p><%= data.desc %></p>
+</div>
+<div class="change">
+<a href="/edit/<%= data.id %>"  class="btn btn1">edit</a>
+<form action="/data/delete/<%= data.id %>?_method=DELETE" method="post"><!--here we are overriding method of post to delete
+-->
+<input type="hidden" name="_method" value="DELETE">
+<input type="submit" class="btn btn2" value="delete">
+</form>
+</div>
+</div>
+
+
+
+
+<%- include('footer') %>
